@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  /* overflow: hidden; */
+}
+
+/* Outer Div */
+
+.outer__background {
+  background-color: #3d087b;
+  height: 90vh;
+  width: 80vw;
+  padding: 1rem;
+}
+
+/* grid Div */
+.grid__section {
+  /* border: 3px solid white; */
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin: 2rem;
+}
+
+.box-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.box-1 > .box-1__img {
+  width: 15rem;
+}
+
+/* Timer Div */
+.box-2 {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+.timer__div {
+  display: flex;
+  gap: 1rem;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  height: 8rem;
+  background-color: #fff;
+  padding: 1rem;
+  /* margin-top: 1rem; */
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.clock__box {
+  display: grid;
+  text-align: center;
+  width: 100%;
+  line-height: 1.5rem;
+  place-items: center;
+  /* border: 2px solid red; */
+  background-color: #f6e2ff;
+  margin: 0rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #b85ebf;
+}
+
+.timer__div > span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #b85ebf;
+}
+
+#am {
+  background: url("AM_svg.svg");
+  color: #fff;
+}
+
+/* box-3 */
+
+.box-3 {
+  grid-column: 1/3;
+  grid-row: 2/5;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+}
+
+.alarm-box > img {
+  width: 3rem;
+}
+
+.alarm-box > span {
+  position: relative;
+  font-size: 1.5rem;
+  bottom: 0.8rem;
+  left: 1rem;
+}
+.alarm-box > select {
+  position: relative;
+  bottom: 0.7rem;
+  left: 6rem;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  outline: transparent;
+}
+#select-lunch {
+  left: 7.5rem;
+}
+#select-nap {
+  left: 8.8rem;
+}
+
+#select-night {
+  left: 7.8rem;
+}
+
+/* box-4 */
+
+.box-4 {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  background-color: #9140b5;
+  border-radius: 10px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px;
+}
+.box-4 > h2 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* box-5 */
+
+.box-5 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.box-5 > button {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #83a4d4 0%, #4f00ce 51%, #83a4d4 100%);
+  color: #fff;
+  outline: none;
+  box-shadow: rgba(34, 34, 34, 0.48) 6px 2px 16px 0px, rgba(7, 7, 7, 0.8) -6px -2px 16px 0px;
+  text-shadow: 1px 5px #3d087b;
+}
+
+/* Box-6 */
+
+.box-6 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
+}
+.box-6 > h2 {
+  font-size: 2.2rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-weight: 700;
+  color: #8e53f0;
+}
+
+/* Box-7 */
+.box-7 {
+  grid-column: 3/4;
+  grid-row: 3/7;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+}
+.box-7 > img {
+  object-fit: contain;
+  width: 100%;
+}
+
+/* box-8 */
+
+.box-8 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+}
+.box-8 > span {
+  font-size: 1.2rem;
+  color: #b85ebf;
+  font-weight: 700;
+  text-shadow: 1px 0.5px #3d087b;
+}
+
+/* Media Queries */
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  html {
+    font-size: 60%;
+  }
+  .outer__background {
+    height: 85vh;
+  }
+
+  /* display grid */
+  .grid__section {
+    gap: 1.5rem;
+    margin: 1.5rem;
+
+    /* box-1 */
+  }
+  .box-1 > .box-1__img {
+    width: 15rem;
+  }
+
+  /* box-2 */
+  .box-2 {
+    width: 100%;
+  }
+  .timer__div {
+    height: 7rem;
+  }
+  .clock__box {
+    width: 7rem;
+    margin: 0rem 1rem;
+  }
+
+  /* box-3 */
+  .box-3 {
+    padding: 2rem;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1230px) {
+  html {
+    font-size: 56%;
+  }
+  .outer__background {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1140px) {
+  html {
+    font-size: 52%;
+  }
+  .outer__background {
+    height: 75vh;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1060px) {
+  html {
+    font-size: 50%;
+  }
+  .outer__background {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1020px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 980px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 980px) {
+  html {
+    font-size: 45%;
+  }
+
+  .grid__section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 0.6fr 0.7fr 0.7fr 0.6fr;
+  }
+
+  body {
+    height: 100%;
+  }
+  .outer__background {
+    height: 100%;
+  }
+
+  /* logo */
+  .box-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  /* digital clock */
+  .box-2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+
+  /* alaram timimg select */
+  .box-3 {
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
+
+  /* greets */
+  .box-4 {
+    grid-column: 1/4;
+    grid-row: 5/6;
+  }
+  .box-4 > h2 {
+    font-size: 4rem;
+  }
+  /* button */
+  .box-5 {
+    grid-column: 1/4;
+    grid-row: 9/10;
+  }
+  .box-5 > button {
+    height: 100%;
+  }
+
+  /* wake bro div */
+  .box-6 {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  .box-6 > h2 {
+    font-size: 3.2rem;
+  }
+
+  /* img */
+  .box-7 {
+    grid-column: 1/4;
+    grid-row: 6/9;
+  }
+  .box-7 > img {
+    height: 100%;
+  }
+
+  /* textbox */
+  .box-8 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+  }
+  .box-8 > span {
+    font-size: medium;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+  html {
+    font-size: 43%;
+  }
+  .grid__section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.7fr 0.5fr 0.8fr 0.9fr 2fr 0.4fr 1fr;
+  }
+  body {
+    height: 100%;
+  }
+  .outer__background {
+    height: 100%;
+  }
+
+  /* logo */
+  .box-1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+  }
+
+  /* digital clock */
+  .box-2 {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  .timer__div {
+    height: 100%;
+  }
+  .clock__box {
+    width: 100%;
+    line-height: 2.5rem;
+    margin: 0rem 0.5rem;
+    font-size: 2rem;
+  }
+
+  .timer__div > span {
+    font-size: 1rem;
+  }
+
+  /* alaram timimg select */
+  .box-3 {
+    grid-column: 1/4;
+    grid-row: 4/6;
+  }
+  .alarm-box > span {
+    display: none;
+  }
+  .alarm-box > select {
+    width: 18rem;
+    height: 2.4rem;
+    font-size: 2rem;
+  }
+  .alarm-box > img {
+    width: 3.5rem;
+  }
+  #select-wake {
+    left: 5rem;
+    bottom: 1.3rem;
+  }
+  #select-lunch {
+    left: 5rem;
+    bottom: 1.3rem;
+  }
+  #select-nap {
+    left: 5rem;
+    bottom: 1.3rem;
+  }
+
+  #select-night {
+    left: 5rem;
+    bottom: 1.3rem;
+  }
+
+  /* greets */
+  .box-4 {
+    grid-column: 1/-1;
+    grid-row: 7/8;
+  }
+  /* .box-4 > h2{
+        font-size: 3rem;
+    } */
+  /* button */
+  .box-5 {
+    grid-column: 1/4;
+    grid-row: 9/10;
+  }
+
+  /* wake bro div */
+  .box-6 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+  .box-6 > h2 {
+    font-size: 2.6rem;
+  }
+
+  /* img */
+  .box-7 {
+    grid-column: 1/4;
+    grid-row: 6/7;
+  }
+  .box-7 > img {
+    height: 100%;
+  }
+
+  /* textbox */
+  .box-8 {
+    grid-column: 1/4;
+    grid-row: 8/9;
+  }
+  .box-8 > span {
+    font-size: medium;
+
+    line-height: 4rem;
+  }
+}
